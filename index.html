@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script> 
+    <link rel="icon" type="image/png" sizes="16x16"  href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main class="encriptador">
+        <textarea id="textoOriginal" placeholder="Ingrese el texto a encriptar/desencriptar"></textarea>
+        <br>
+        <button id="textoEncriptado" onclick="encriptar()">Encriptar</button>
+        <button id="textoDesencriptado"onclick="desencriptar()">Desencriptar</button>
+        <br>
+        <textarea id="resultado" placeholder="Resultado"></textarea>
+        <button class= "copiar" onclick="copiarTexto()">Copiar al portapapeles</button>
+    </main>
+</body>
+</html>

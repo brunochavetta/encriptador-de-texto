@@ -1,0 +1,105 @@
+body{
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    background-color:#60BF81;
+}
+
+header{
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0 30px;
+    background-color: #5062666b;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #10454F; 
+    margin: 0;  
+    padding: 40px 0 10px 0;
+}
+
+  .encriptador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 50px;
+    background-color: #5062666b;
+  }
+  
+  #textoOriginal, #resultado{
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+  button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #93D94E;
+    transition: 1s all;
+  }
+
+  button:hover, button.copiar:hover{
+    border: rgb(251, 255, 245); 
+    background-color: #4f7c22;
+    color: white; 
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  button.copiar {
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #93D94E;
+  }
+
+  
+  @media screen and (max-width: 670px){
+    body {
+        overflow-x: hidden;
+        margin: 0; 
+    }
+
+    header, .encriptador{
+        width: 95%;  
+    }
+
+    h1{
+        font-size: 35px;
+        margin: 0; 
+    }
+
+    #textoOriginal, #resultado{
+        width: 90%;
+        height: 150px;
+        padding: 10px 0;
+    }
+
+    button {
+        width: 150px;
+        height: 35px;
+        font-size: 17px;
+        margin: 5px; 
+      }
+
+    button.copiar {
+        height: 40px;
+      }
+    
+  }
+  
